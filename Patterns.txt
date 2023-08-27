@@ -1,0 +1,1072 @@
+package patterns;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+	//to print square numbers
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print("*");
+		}
+			System.out.println();
+		}
+	}
+
+}
+
+Output:
+
+*****
+*****
+*****
+*****
+*****
+
+
+
+package patterns;
+
+public class Program2 {
+	public static void main(String[] args) {
+			int n= 5;
+			for(int i=1;i<=n;i++) {
+				for(int j=1;j<=n;j++) {
+					System.out.print(j);
+			}
+				System.out.println();
+			}
+		}
+
+}
+
+
+
+Output:
+12345
+12345
+12345
+12345
+12345
+
+
+package patterns;
+
+public class Program3 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(j%2);
+		}
+			System.out.println();
+		}
+	}
+}
+
+
+Output:
+10101
+10101
+10101
+10101
+10101
+
+
+
+package patterns;
+
+public class Program4 {
+	public static void main(String[] args) {
+		int n = 5;
+		int k = 1;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print(k%2);
+				k++;
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+10101
+01010
+10101
+01010
+10101
+
+
+
+package patterns;
+
+public class Program5 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print((char)(64+i));
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
+
+
+package patterns;
+
+public class Program6 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print((char)(70-j));
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+EDCBA
+EDCBA
+EDCBA
+EDCBA
+EDCBA
+
+
+
+package patterns;
+
+public class Program7 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				System.out.print((char)(64+j));
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+
+package patterns;
+
+public class Program8 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || i==n || j==n ||j==1) {
+				System.out.print("*");
+		}else {
+			System.out.print(" ");
+		}
+		}
+			System.out.println();
+	}
+	}
+}
+
+Output:
+*****
+*   *
+*   *
+*   *
+*****
+
+
+package patterns;
+
+public class Program9 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=n;j++) {
+				if(i==1 || j==1 || i==n || j == n || i+j == n+1 || i==j) {
+				System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+*****
+** **
+* * *
+** **
+*****
+
+
+package patterns;
+
+public class Program10 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+*
+**
+***
+****
+*****
+
+package patterns;
+
+public class Program11 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(j);
+		}
+			System.out.println();
+		}
+	}
+}
+Output:
+1
+12
+123
+1234
+12345
+
+
+package patterns;
+
+public class Program12 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(j%2);
+		}
+			System.out.println();
+		}
+	}
+}
+Output:
+1
+10
+101
+1010
+10101
+
+
+package patterns;
+
+public class Program13 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(i%2);
+		}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+1
+00
+111
+0000
+11111
+
+
+package patterns;
+
+public class Program14 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=i;j>=1;j--) {
+				System.out.print(j);
+		}
+			System.out.println();
+		}
+	}
+}
+Output:
+1
+21
+321
+4321
+54321
+
+
+package patterns;
+
+public class Program15 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=n;i>=1;i--) {
+			for(int j=i;j<=n;j++) {
+				System.out.print(j);
+		}
+			System.out.println();
+		}
+		
+	}
+}
+
+Output:
+5
+45
+345
+2345
+12345
+
+
+package patterns;
+
+public class Program16 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=n;i>=1;i--) {
+			for(int j=n;j>=i;j--) {
+				System.out.print(j);
+		}
+			System.out.println();
+		}
+	}
+}
+Output:
+5
+54
+543
+5432
+54321
+
+
+package patterns;
+
+public class Program17 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print((char)(96+j));
+		}
+			System.out.println();
+		}
+	}
+}
+Output:
+a
+ab
+abc
+abcd
+abcde
+
+
+package patterns;
+
+public class Program18 {
+	public static void main(String[] args) {
+		int n= 5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print((char)(102-j));
+		}
+			System.out.println();
+		
+		}
+	}
+}
+Output:
+e
+ed
+edc
+edcb
+edcba
+
+
+package patterns;
+
+public class Program19 {
+	public static void main(String[] arga) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++) {
+				if(i==1 || j==1 || i==j || i==n){
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("# ");
+				}
+			}
+		System.out.println();
+	}
+}
+}
+
+Output:
+* 
+* * 
+* # * 
+* # # * 
+* * * * * 
+
+package patterns;
+
+public class Program20 {
+	public static void main(String[] args) {
+    int n=5;
+    for(int i=1;i<=n;i++) {
+    	for(int s=1;s<=n-i;s++) {
+    		System.out.print("-");
+    	}
+    	for(int j=1;j<=i;j++) {
+    		System.out.print("*");
+    	}
+    	System.out.println();
+   }
+ }
+}
+
+Output:
+----*
+---**
+--***
+-****
+*****
+
+
+package patterns;
+
+public class Program21 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("- ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+Output:
+- - - - 1 
+- - - 1 2 
+- - 1 2 3 
+- 1 2 3 4 
+1 2 3 4 5 
+
+
+package patterns;
+
+public class Program22 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=i-1;s++) {
+				System.out.print("- ");
+			}
+			for(int j=n;j>=i;j--) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+- - - - 5 
+- - - 5 4 
+- - 5 4 3 
+- 5 4 3 2 
+5 4 3 2 1 
+
+
+
+
+package patterns;
+
+public class Program23 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=i-1;s++) {
+				System.out.print("- ");
+			}
+			for(int j=i;j<=n;j++) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+- - - - 5 
+- - - 4 5 
+- - 3 4 5 
+- 2 3 4 5 
+1 2 3 4 5 
+
+
+package patterns;
+
+public class Program24 {
+
+	public static void main(String[] args) {
+		int n = 5;
+		for(int i=5;i>=1;i--) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+Output:
+*****
+****
+***
+**
+*
+
+package patterns;
+
+public class Program25 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("-");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print(j);
+				if(j<i) {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+----1
+---1*2
+--1*2*3
+-1*2*3*4
+1*2*3*4*5
+
+
+package patterns;
+
+public class Program26 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("-");
+			}
+			int pro=1;
+			for(int j=1;j<=i;j++) {
+				System.out.print(j);
+				if(j<i) {
+					System.out.print("*");
+				}
+				pro = pro*j;
+			}
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("");
+			}
+			System.out.print("="+pro);
+			System.out.println();
+		}
+	}
+
+}
+Output:
+----1=1
+---1*2=2
+--1*2*3=6
+-1*2*3*4=24
+1*2*3*4*5=120
+
+
+package patterns;
+
+public class Program27 {
+	public static void main(String[]args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("-");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+Output:
+*****
+-****
+--***
+---**
+----*
+
+
+package patterns;
+
+public class Program28 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("-");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+}
+Output:
+* * * * * * * * * 
+-* * * * * * * 
+--* * * * * 
+---* * * 
+----* 
+
+
+package patterns;
+
+public class Program29 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("-");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+----* 
+---* * * 
+--* * * * * 
+-* * * * * * * 
+* * * * * * * * * 
+
+
+package patterns;
+
+public class Program30 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("- ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(i%2+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+Output:
+- - - - 1 
+- - - 0 0 0 
+- - 1 1 1 1 1 
+- 0 0 0 0 0 0 0 
+1 1 1 1 1 1 1 1 1 
+
+
+
+
+
+package patterns;
+
+public class Program31 {
+	public static void main(String[] args) {
+		int n=5;
+		int k=1;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("- ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(k%2+" ");
+				k++;
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+- - - - 1 
+- - - 0 1 0 
+- - 1 0 1 0 1 
+- 0 1 0 1 0 1 0 
+1 0 1 0 1 0 1 0 1 
+
+
+package patterns;
+
+public class Program32 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print("- ");
+			}
+			int k=1;
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print(k+" ");
+				if(j<i) {
+					k++;
+				}
+				else {
+					k--;
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+
+- - - - 1 
+- - - 1 2 1 
+- - 1 2 3 2 1 
+- 1 2 3 4 3 2 1 
+1 2 3 4 5 4 3 2 1 
+
+
+package patterns;
+
+public class Program34 {
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=n;i>=1;i--) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=2*i-1;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output:
+*********
+ *******
+  *****
+   ***
+    *
+
+
+package patterns;
+
+public class Program35 {
+
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;
+		int sp=n/2;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=st;j++) {
+				System.out.print("*");
+			}
+			if(i<=n/2) {
+				sp--;
+				st = st+2;
+			}
+			else {
+				st = st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+Output:
+
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+package patterns;
+
+public class Program36 {
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;
+		int sp=n/2;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=st;j++) {
+				System.out.print(i%2);
+			}
+			if(i<=n/2) {
+				sp--;
+				st = st+2;
+			}
+			else {
+				st = st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+Output:
+
+   1
+  000
+ 11111
+0000000
+ 11111
+  000
+   1
+
+
+
+package patterns;
+
+public class Program37 {
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;
+		int sp=n/2;
+		int k=1;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=st;j++) {
+				System.out.print(k%2);
+				k++;
+			}
+			if(i<=n/2) {
+				sp--;
+				st = st+2;
+			}
+			else {
+				st = st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+Output:
+
+   1
+  010
+ 10101
+0101010
+ 10101
+  010
+   1
+
+
+
+
+package patterns;
+
+public class Program38 {
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;
+		int sp=n/2;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			int k=1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k);
+				if(j<=st/2) {
+					k++;
+				}
+				else {
+					k--;
+				}
+			}
+			if(i<=n/2) {
+				sp--;
+				st = st+2;
+			}
+			else {
+				st = st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+Output:
+   1
+  121
+ 12321
+1234321
+ 12321
+  121
+   1
+
+
+
+package patterns;
+
+public class Program39 {
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;
+		int sp=n/2;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			int k = st/2+1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k);
+				if(j<=st/2) {
+					k--;
+				}
+				else {
+					k++;
+				}
+			}
+			if(i<=n/2) {
+				sp--;
+				st = st+2;
+			}
+			else {
+				st = st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+Output:
+   1
+  212
+ 32123
+4321234
+ 32123
+  212
+   1
+
+
+
+package patterns;
+
+public class Program40 {
+	public static void main(String[] args) {
+		int n=7;
+		int st=1;
+		int sp=n/2;
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=sp;s++) {
+				System.out.print(" ");
+			}
+			int k=sp+1;
+			for(int j=1;j<=st;j++) {
+				System.out.print(k);
+				if(j<=st/2) {
+					k++;
+				}
+				else {
+					k--;
+				}
+			}
+			if(i<=n/2) {
+				sp--;
+				st = st+2;
+			}
+			else {
+				st = st-2;
+				sp++;
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+Output:
+   4
+  343
+ 23432
+1234321
+ 23432
+  343
+   4
+
+
+
+
+
+
+
